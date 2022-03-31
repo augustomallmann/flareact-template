@@ -8,8 +8,9 @@
   "type": "module",
   "scripts": {
     "build-api": "node api-builder.js",
-    "build": "rm -rf out dist && flareact4azion build",
-    "deploy": "flareact4azion publish",
+    "build": "rm -rf out dist && flareact build",
+    "deploy": "flareact publish",
+    "dev": "flareact dev",
     "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint --color --fix 'src/**/*.ts'"
   },
